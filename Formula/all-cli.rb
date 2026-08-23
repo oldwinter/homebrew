@@ -5,20 +5,20 @@
 class AllCli < Formula
   desc "Inspect and manage common CLI tool contexts"
   homepage "https://github.com/oldwinter/all-cli"
-  version "0.0.0-26.1.b890bcd"
+  version "0.0.0-27.1.4357229"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-26.1.b890bcd/all-cli_0.0.0-26.1.b890bcd_darwin_amd64.tar.gz"
-      sha256 "3063912baadac210051b0749dfde7c17f6f766d7eee6aa35e57b008525b95448"
+      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-27.1.4357229/all-cli_0.0.0-27.1.4357229_darwin_amd64.tar.gz"
+      sha256 "28950d4908d45044a8f4060158527a6e211dcaa76bd4ac9a9f387f583137f155"
 
       define_method(:install) do
         bin.install "all-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-26.1.b890bcd/all-cli_0.0.0-26.1.b890bcd_darwin_arm64.tar.gz"
-      sha256 "6afab878748906f4b1c8d0eab2d02ba550a2f0ebbb79729ab96f3a96ae6e2dc0"
+      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-27.1.4357229/all-cli_0.0.0-27.1.4357229_darwin_arm64.tar.gz"
+      sha256 "587d8ea1bbdb54c39a849e487e053f40b4ce18967197b3c73e9f8d77dcf52c13"
 
       define_method(:install) do
         bin.install "all-cli"
@@ -28,15 +28,15 @@ class AllCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-26.1.b890bcd/all-cli_0.0.0-26.1.b890bcd_linux_amd64.tar.gz"
-      sha256 "f25c2d5f457c9e6ef299f628a30841c62215b6f912eb4ea2d3aeb6407a2b8f32"
+      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-27.1.4357229/all-cli_0.0.0-27.1.4357229_linux_amd64.tar.gz"
+      sha256 "efc83226826f1c61da3f6ec07342fa0bc36ac6ea3381cb1eba292932a683f5b0"
       define_method(:install) do
         bin.install "all-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-26.1.b890bcd/all-cli_0.0.0-26.1.b890bcd_linux_arm64.tar.gz"
-      sha256 "7cb61628cf7decdeb76cd886d05d7e14d1eb10f2a5f0dac8847fb5930d9802f2"
+      url "https://github.com/oldwinter/all-cli/releases/download/v0.0.0-27.1.4357229/all-cli_0.0.0-27.1.4357229_linux_arm64.tar.gz"
+      sha256 "c1635fb71bf2abb1013909311e11c35459a11074055a7518e329ccb17b05fdac"
       define_method(:install) do
         bin.install "all-cli"
       end
